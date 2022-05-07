@@ -34,8 +34,7 @@ if ($property->type == 'sale') {
 }
 ?>
 
-<section class="border mt-2 mb-4 pt-2 pb-2" style="border-radius:3px;font-family: 'Montserrat', sans-serif !important; margin: 0px 20px;
-    padding: 18px;">
+<section class="border mt-2 mb-4 pt-2 pb-2" style="border-radius:3px;font-family: 'Montserrat', sans-serif !important; margin: 0px 20px; padding: 18px; width: 90%; margin-left: 4%;">
   <section class="row pl-2">
     <span>
       <a href="/" style="color:black;">Home</a>
