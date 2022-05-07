@@ -9,7 +9,7 @@ $emirates = DB::table('states')
 ?>
 
 
-<div id="search-form12" style="">
+<div id="search-form12" >
 
   <form action="/search-propeties" method="get">
     @csrf
@@ -96,7 +96,7 @@ $emirates = DB::table('states')
 
       </div>
 
-      <div class="row mt-2">
+      <div class="row mt-2 overflow-hidden">
         <div class="col-lg-1" style="padding-left:0px !important">
 
           <div class=" input-group input border-0">
@@ -275,7 +275,7 @@ $emirates = DB::table('states')
 
         </div>
 
-        <div class="col-lg-1 ml-2 mt-1 searchBtn" style="padding-left:0px !important; ">
+        <div class="col-lg-1 ml-1 mt-1 searchBtn" style="padding-left:0px !important; ">
           <button class="btn btn-success button" type="submit" style="background-color:#00B4A2; width:100%;">Search</button>
         </div>
       </div>
