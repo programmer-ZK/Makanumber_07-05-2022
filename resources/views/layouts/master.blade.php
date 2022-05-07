@@ -133,77 +133,77 @@
 
 	<div style="margin-top: 40px;"></div>
 	<div class="main-content">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-weight:bold ; margin-top:-40px;font-family: 'Montserrat', sans-serif !important;">
-			<a class="navbar-brand ml-5" href="/">
-				<img src="/frontend-images/logo.png" alt="logo-img" style="height:45px" />
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-weight:bold ; margin-top:-40px;font-family: 'Montserrat', sans-serif !important;">
+      <a class="navbar-brand ml-5" href="/">
+        <img src="/frontend-images/logo.png" alt="logo-img" style="height:45px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-				<ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
-					<li class="nav-item active mt-1" style="border:none !important;">
-						<a class="nav-link mr-4 hoverEffect" href="/"><span class="nt-1" style="padding-top:4px;">H</span>ome</a>
-					</li>
-					<div class="dropdown">
-						<li class="nav-item active mt-1  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none !important; ">
-							<a class="nav-link mr-4 hoverEffect" href="#"><span class="nt-1" style="padding-top:4px;">B</span>uy <span class="sr-only">(current)</span></a>
-						</li>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+          <li class="nav-item active mt-1" style="border:none !important;">
+            <a class="nav-link mr-4 hoverEffect" href="/"><span class="nt-1" style="padding-top:4px;">H</span>ome</a>
+          </li>
+          <div class="dropdown">
+            <li class="nav-item active mt-1  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none !important; ">
+              <a class="nav-link mr-4 hoverEffect" href="#"><span class="nt-1" style="padding-top:4px;">B</span>uy <span class="sr-only">(current)</span></a>
+            </li>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-							<h5 class="mx-2">Residential</h5>
-							<a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=1">Apartment</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=2">Villa</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=6">Townhouse</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=3">Residential
-								Plot</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=7">Residential
-								Building</a>
+              <h5 class="mx-2">Residential</h5>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=1&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Apartment</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=2&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Villa</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=6&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Townhouse</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=3&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Residential
+                Plot</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=7&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Residential
+                Building</a>
 
-							<hr>
+              <hr>
 
-							<h5 class="mx-2">Commercial</h5>
-							<a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=8">Office</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=9">Warehouse</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=10">Shop</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=4">Industrial
-								Land</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=11">Showroom</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=5">Commercial
-								Plot </a>
+              <h5 class="mx-2">Commercial</h5>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=8&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Office</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=9&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Warehouse</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=10&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Shop</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=4&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Industrial
+                Land</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=11&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Showroom</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=5&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Commercial
+                Plot </a>
 
-						</div>
-					</div>
+            </div>
+          </div>
 
-					<div class="dropdown">
-						<li class="nav-item active mt-1  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none !important;">
-							<a class="nav-link mr-4 hoverEffect" href="#"><span class="nt-1" style="padding-top:4px;">R</span>ent</a>
-						</li>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<h5 class="mx-2">Residential</h5>
-							<a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=1">Apartment</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=2">Villa</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=6">Townhouse</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=3">Residential
-								Plot</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=7">Residential
-								Building</a>
+          <div class="dropdown">
+            <li class="nav-item active mt-1  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none !important;">
+              <a class="nav-link mr-4 hoverEffect" href="#"><span class="nt-1" style="padding-top:4px;">R</span>ent</a>
+            </li>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <h5 class="mx-2">Residential</h5>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=1&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Apartment</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=2&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Villa</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=6&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Townhouse</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=3&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Residential
+                Plot</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=7&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Residential
+                Building</a>
 
-							<hr>
+              <hr>
 
-							<h5 class="mx-2">Commercial</h5>
-							<a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=8">Office</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=9">Warehouse</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=10">Shop</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=4">Industrial
-								Land</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=11">Showroom</a>
-							<a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=5">Commercial
-								Plot </a>
-						</div>
-					</div>
-					{{-- <div class="dropdown">
+              <h5 class="mx-2">Commercial</h5>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=8&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Office</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=9&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Warehouse</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=10&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Shop</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=4&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Industrial
+                Land</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=11&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Showroom</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=5&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Commercial
+                Plot </a>
+            </div>
+          </div>
+          {{-- <div class="dropdown">
           <li class="nav-item active" data-toggle="dropdown" >
             <span class="nav-link " href="#">More <span class="navbar-toggler-icon my-toggler" style="margin-left:-2px; font-size:20px;"></span></span>
             <div class="dropdown-menu">
@@ -215,96 +215,96 @@
           </li>
         </div> --}}
 
-					<div class="dropdown">
-						<li class="nav-item active hoverEffect" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none !important;">
-							<span class="nav-link" style="padding-top:12px;" href="#"><span class="pr-1">More</span><span class="fa fa-bars  " style="margin-bottom:-10px !important; font-size:18px; "></span></span>
-						</li>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="/about-us">About Us</a>
-							<a class="dropdown-item" href="/blogs">Blog</a>
-							<a class="dropdown-item" href="/customer-service">Contact us</a>
-							<a class="dropdown-item" href="/privacy-policy">Privacy Policy</a>
-						</div>
-					</div>
+          <div class="dropdown">
+            <li class="nav-item active hoverEffect" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none !important;">
+              <span class="nav-link" style="padding-top:12px;" href="#"><span class="pr-1">More</span><span class="fa fa-bars  " style="margin-bottom:-10px !important; font-size:18px; "></span></span>
+            </li>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="/about-us">About Us</a>
+              <a class="dropdown-item" href="/blogs">Blog</a>
+              <a class="dropdown-item" href="/customer-service">Contact us</a>
+              <a class="dropdown-item" href="/privacy-policy">Privacy Policy</a>
+            </div>
+          </div>
 
 
-					<li class="nav-item mt-2 ml-3 active" style="border:none !important;">
-						<span class="mr-5">
-							<img class="flag mr-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/320px-Flag_of_Pakistan.svg.png" />
-							<img class="flag1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/255px-Flag_of_the_United_Arab_Emirates.svg.png" />
-						</span>
+          <li class="nav-item mt-2 ml-3 active" style="border:none !important;">
+            <span class="mr-5">
+              <img class="flag mr-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/320px-Flag_of_Pakistan.svg.png" />
+              <img class="flag1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/255px-Flag_of_the_United_Arab_Emirates.svg.png" />
+            </span>
 
-					</li>
-					@if (Auth::user())
-					<li class="nav-item mt-1 ">
-						<a href="/add-property"><button class="btn btn-default" style="border:1px solid #D3D3D3;">Add
-								Property</button></a>
-					</li>
-					@endif
+          </li>
+          @if (Auth::user())
+          <li class="nav-item mt-1 ">
+            <a href="/add-property"><button class="btn btn-default" style="border:1px solid #D3D3D3;">Add
+                Property</button></a>
+          </li>
+          @endif
 
-				</ul>
-				<form class="form-inline my-2 my-lg-0  mr-5">
-					@if (Auth::user())
-					@if (Auth::user()->avatar_id)
-					@php
-					$avatar = DB::table('media_files')->where('id', Auth::user()->avatar_id)->first();
-					@endphp
-					<li class="nav-item ml-2 mr-0" style="list-style:none !important;">
-						<img src="{{ asset('public/storage/' . $avatar->url) }}" style="width:30px; height:30px; border-radius:50%; border:1px solid;" />
-					</li>
-					@else
-					<li class="nav-item ml-2" style="list-style:none !important;">
-						<img src="/frontend-images/profile-pic.jpg" style="height:30px; width:30px; border-radius:50%;" />
-					</li>
-					@endif
-					<div class="dropdown mr-5">
-						<li class="nav-item active" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none !important;">
-							<span class="nav-link " href="#">{{ Auth::user()->username }} <i class="fa fa-angle-down"></i></span>
-						</li>
-						@if (Auth::user()->super_user == 1 || Auth::user()->super_user == 0)
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        </ul>
+        <form class="form-inline my-2 my-lg-0  mr-5">
+          @if (Auth::user())
+          @if (Auth::user()->avatar_id)
+          @php
+          $avatar = DB::table('media_files')->where('id', Auth::user()->avatar_id)->first();
+          @endphp
+          <li class="nav-item ml-2 mr-0" style="list-style:none !important;">
+            <img src="{{ asset('public/storage/' . $avatar->url) }}" style="width:30px; height:30px; border-radius:50%; border:1px solid;" />
+          </li>
+          @else
+          <li class="nav-item ml-2" style="list-style:none !important;">
+            <img src="/frontend-images/profile-pic.jpg" style="height:30px; width:30px; border-radius:50%;" />
+          </li>
+          @endif
+          <div class="dropdown mr-5">
+            <li class="nav-item active" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none !important;">
+              <span class="nav-link " href="#">{{ Auth::user()->username }} <i class="fa fa-angle-down"></i></span>
+            </li>
+            @if (Auth::user()->super_user == 1 || Auth::user()->super_user == 0)
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-							<?php
-							$user_id = Auth::user()->id;
-							$user_role_id = DB::table('role_users')
-								->where('user_id', '=', $user_id)
-								->value('role_id');
-							?>
-
-
-							@if ($user_role_id != 3)
-							<a class="dropdown-item" href="/admin"> Dashboard</a>
-							@endif
-
-							@if ($user_role_id == 3)
-							<a class="dropdown-item" href="/my-profile" class="btn-logout"><i class="fas fa-user"></i> My Profile </a>
-							@else
-							<a class="dropdown-item" href="/admin/system/users/profile/{{ Auth::user()->id }}" class="btn-logout"><i class="fas fa-user"></i> My Profile </a>
-							@endif
-
-							<a class="dropdown-item" href="{{ route('access.logout') }}" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
-
-						</div>
-					</div>
-					@else
-					<div class="dropdown-menu  mr-5" aria-labelledby="dropdownMenuButton">
+              <?php
+              $user_id = Auth::user()->id;
+              $user_role_id = DB::table('role_users')
+                ->where('user_id', '=', $user_id)
+                ->value('role_id');
+              ?>
 
 
-						<a class="dropdown-item" href="/my-profile" class="btn-logout"><i class="fas fa-user"></i> My Profile</a>
-						<a class="dropdown-item" href="{{ route('access.logout') }}" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+              @if ($user_role_id != 3)
+              <a class="dropdown-item" href="/admin"> Dashboard</a>
+              @endif
 
-					</div>
-			</div>
-			@endif
-			@else
-			<a href="/admin/login" class="btn btn-outline-dark px-3 sign-in-button mr-1 " type="submit">Sign In</a>
-			<a href="/create-account" class="btn btn-outline-dark px-3 sign-in-button ml-1  mr-3" type="submit">Register</a>
+              @if ($user_role_id == 3)
+              <a class="dropdown-item" href="/my-profile" class="btn-logout"><i class="fas fa-user"></i> My Profile </a>
+              @else
+              <a class="dropdown-item" href="/admin/system/users/profile/{{ Auth::user()->id }}" class="btn-logout"><i class="fas fa-user"></i> My Profile </a>
+              @endif
 
-			@endif
+              <a class="dropdown-item" href="{{ route('access.logout') }}" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
 
-			</form>
-	</div>
-	</nav>
+            </div>
+          </div>
+          @else
+          <div class="dropdown-menu  mr-5" aria-labelledby="dropdownMenuButton">
+
+
+            <a class="dropdown-item" href="/my-profile" class="btn-logout"><i class="fas fa-user"></i> My Profile</a>
+            <a class="dropdown-item" href="{{ route('access.logout') }}" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+
+          </div>
+      </div>
+      @endif
+      @else
+      <a href="/admin/login" class="btn btn-outline-dark px-3 sign-in-button mr-1 " type="submit">Sign In</a>
+      <a href="/create-account" class="btn btn-outline-dark px-3 sign-in-button ml-1  mr-3" type="submit">Register</a>
+
+      @endif
+
+      </form>
+  </div>
+  </nav>
 
 
 	<!-- End Navbar -->
