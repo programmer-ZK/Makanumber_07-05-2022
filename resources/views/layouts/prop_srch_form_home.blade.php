@@ -21,7 +21,7 @@ $emirates = DB::table('states')
 
           <div class="input-group input border-0">
             <select class="custom-select" id="purpose" name="purpose" style="color:grey;" required>
-            <option value="" selected disabled>Purpose </option>
+              <option value="" selected disabled>Purpose </option>
               <option value="renting" <?= (isset($_GET['purpose']) && $_GET['purpose'] == 'renting') ? "selected" : "" ?>>Rent</option>
               <option value="selling" <?= (isset($_GET['purpose']) && $_GET['purpose'] == 'selling') ? "selected" : "" ?>>Buy</option>
             </select>
@@ -47,7 +47,7 @@ $emirates = DB::table('states')
 
         </div>
 
-        <div class="col-lg-1" style="padding-left:0px !important">
+        <div class="col-lg-2" style="padding-left:0px !important">
 
           <div class="input-group input border-0">
             <select class="custom-select " id="location" name="location" style="color:grey;">
@@ -93,6 +93,10 @@ $emirates = DB::table('states')
 
         </div>
 
+
+      </div>
+
+      <div class="row mt-2">
         <div class="col-lg-1" style="padding-left:0px !important">
 
           <div class=" input-group input border-0">
@@ -113,10 +117,6 @@ $emirates = DB::table('states')
           </div>
 
         </div>
-      </div>
-
-      <div class="row mt-2">
-
         <div class="col-lg-2" style="padding-left:0px !important">
 
           <div class="input-group input border-0">
@@ -274,7 +274,7 @@ $emirates = DB::table('states')
 
         </div>
 
-        <div class="col-lg-2 ml-2 mt-1 searchBtn" style="padding-left:0px !important; ">
+        <div class="col-lg-1 ml-2 mt-1 searchBtn" style="padding-left:0px !important; ">
           <button class="btn btn-success button" type="submit" style="background-color:#00B4A2; width:100%;">Search</button>
         </div>
       </div>
