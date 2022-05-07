@@ -102,7 +102,7 @@ $emirates = DB::table('states')
           <div class=" input-group input border-0">
 
             <select class="custom-select " id="beds" name="beds" style="color:grey;">
-              <option value="" selected disabled>Bed </option>
+              <option value="" selected disabled>Beds </option>
               <option value="0" <?= (isset($_GET['beds']) && $_GET['beds'] == 0) ? "selected" : "" ?>>Studio</option>
               <option value="1" <?= (isset($_GET['beds']) && $_GET['beds'] == 1) ? "selected" : "" ?>>1</option>
               <option value="2" <?= (isset($_GET['beds']) && $_GET['beds'] == 2) ? "selected" : "" ?>>2</option>
@@ -116,7 +116,8 @@ $emirates = DB::table('states')
             </select>
           </div>
 
-        </div>
+        </div>  
+
         <div class="col-lg-2" style="padding-left:0px !important">
 
           <div class="input-group input border-0">

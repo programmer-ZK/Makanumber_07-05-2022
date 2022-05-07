@@ -79,43 +79,48 @@ if ($property->type == 'sale') {
       <p style="color: #FB9F35;">Added {{ $property->created_att }}</p>
       <p><i class="fa fa-map-marker"></i> {{ $property->city_name }}</p>
       <!-- <i class="fa-solid fa-location-dot"></i> -->
-      <div class="row no-gutters" style="font-family: 'Montserrat', sans-serif !important;">
+      <div class="row" style="font-family: 'Montserrat', sans-serif !important;">
 
-        <div class="col-sm-1 py-1">
-          <i class="fa fa-home" style="font-size:40px; color:grey;"></i>
-        </div>
-        <div class="col-sm-2">
-
-          <h5>{{ implode(', ', $property->categories()->pluck('name')->all()) }}</h5>
-          <p>Type</p>
-
-        </div>
-
-        <div class="col-sm-1 ml-3 icon1  py-1">
-          <i class="fa fa-chart-area " style="font-size:40px; color:grey;"></i>
-        </div>
-        <div class="col-sm-1">
-          <h5>{{$property->square }}</h5>
-          <p>Sq. ft</p>
-
+        <div class="col-lg-2 col-sm-3 my-2" style="margin: 0px 2rem;">
+          <div class="float-left py-1 w-50">
+            <i class="fa fa-home" style="font-size:40px; color:grey;"></i>
+          </div>
+          <div class="float-right text-left w-50">
+            <h5>{{ implode(', ', $property->categories()->pluck('name')->all()) }}</h5>
+            <p>Type</p>
+          </div>
         </div>
 
-        <div class="col-sm-1 ml-3 icon1  py-1">
-          <i class="fa fa-bed" style="font-size:40px; color:grey;"></i>
+        <div class="col-lg-2 col-sm-3 my-2" style="margin: 0px 2rem;">
+          <div class="float-left py-1 w-50">
+            <i class="fa fa-chart-area " style="font-size:40px; color:grey;"></i>
+          </div>
+          <div class="float-right text-left w-50">
+            <h5>{{$property->square }}</h5>
+            <p>Sq. ft</p>
+          </div>
         </div>
-        <div class="col-sm-1 ml-1">
-          <h5>{{ number_format($property->number_bedroom) }}</h5>
-          <p>{{ __('Bedrooms') }}</p>
 
+        <div class="col-lg-2 col-sm-3 my-2" style="margin: 0px 2rem;">
+          <div class="float-left py-1 w-50">
+            <i class="fa fa-bed" style="font-size:40px; color:grey;"></i>
+          </div>
+          <div class="float-right text-left w-50">
+            <h5>{{ number_format($property->number_bedroom) }}</h5>
+            <p>{{ __('Bedrooms') }}</p>
+          </div>
         </div>
-        <div class="col-sm-1 ml-4 icon1  py-1">
-          <i class="fa fa-bath" style="font-size:40px; color:grey;"></i>
-        </div>
-        <div class="col-sm-2">
-          <h5>{{ number_format($property->number_bathroom) }}</h5>
-          <p>{{ __('Bathrooms') }}</p>
 
+        <div class="col-lg-2 col-sm-3 my-2" style="margin: 0px 2rem;">
+          <div class="float-left py-1 w-50">
+            <i class="fa fa-bath" style="font-size:40px; color:grey;"></i>
+          </div>
+          <div class="float-right text-left w-50">
+            <h5>{{ number_format($property->number_bathroom) }}</h5>
+            <p>{{ __('Bathrooms') }}</p>
+          </div>
         </div>
+
       </div>
       <p>{!! clean($property->content) !!}</p>
 
@@ -218,7 +223,7 @@ if ($property->type == 'sale') {
 
 
     <div class=" ">
-      <h5 class="headifhouse">Property Video</h5>
+
 
       <?php
 
@@ -230,6 +235,7 @@ if ($property->type == 'sale') {
       ?>
       @foreach($props as $prop)
       @if ($prop->video)
+      <h5 class="headifhouse">Property Video</h5>
       <video style="width:100%; object-fit: initial;" height="365" controls autoplay muted>
         <source src="{{asset('public/storage/properties/'.$prop->video)}}" type="video/mp4">
       </video>
