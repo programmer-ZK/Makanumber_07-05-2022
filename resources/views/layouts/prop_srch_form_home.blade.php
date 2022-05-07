@@ -90,7 +90,7 @@ $emirates = DB::table('states')
 
           </div>
 
-        </div>*-
+        </div>
 
 
       </div>

@@ -80,7 +80,7 @@ if ($property->type == 'sale') {
       <!-- <i class="fa-solid fa-location-dot"></i> -->
       <div class="row" style="font-family: 'Montserrat', sans-serif !important;">
 
-        <div class="col-lg-2 col-sm-3 my-2" style="margin: 0px 2rem;">
+        <div class="col-lg-2 col-sm-2 my-2" style="margin: 0px 1rem;">
           <div class="float-left py-1 w-50">
             <i class="fa fa-home" style="font-size:40px; color:grey;"></i>
           </div>
@@ -90,7 +90,7 @@ if ($property->type == 'sale') {
           </div>
         </div>
 
-        <div class="col-lg-2 col-sm-3 my-2" style="margin: 0px 2rem;">
+        <div class="col-lg-2 col-sm-2 my-2" style="margin: 0px 1rem;">
           <div class="float-left py-1 w-50">
             <i class="fa fa-chart-area " style="font-size:40px; color:grey;"></i>
           </div>
@@ -100,7 +100,7 @@ if ($property->type == 'sale') {
           </div>
         </div>
 
-        <div class="col-lg-2 col-sm-3 my-2" style="margin: 0px 2rem;">
+        <div class="col-lg-2 col-sm-2 my-2" style="margin: 0px 1rem;">
           <div class="float-left py-1 w-50">
             <i class="fa fa-bed" style="font-size:40px; color:grey;"></i>
           </div>
@@ -110,7 +110,7 @@ if ($property->type == 'sale') {
           </div>
         </div>
 
-        <div class="col-lg-2 col-sm-3 my-2" style="margin: 0px 2rem;">
+        <div class="col-lg-2 col-sm-2 my-2" style="margin: 0px 1rem;">
           <div class="float-left py-1 w-50">
             <i class="fa fa-bath" style="font-size:40px; color:grey;"></i>
           </div>
