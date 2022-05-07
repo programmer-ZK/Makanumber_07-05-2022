@@ -121,24 +121,24 @@ if (Auth::user()) {
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
               <h5 class="mx-2">Residential</h5>
-              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=1">Apartment</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=2">Villa</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=6">Townhouse</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=3">Residential
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=1&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Apartment</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=2&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Villa</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=6&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Townhouse</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=3&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Residential
                 Plot</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=7">Residential
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=7&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Residential
                 Building</a>
 
               <hr>
 
               <h5 class="mx-2">Commercial</h5>
-              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=8">Office</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=9">Warehouse</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=10">Shop</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=4">Industrial
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=8&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Office</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=9&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Warehouse</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=10&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Shop</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=4&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Industrial
                 Land</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=11">Showroom</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=5">Commercial
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=11&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Showroom</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=selling&propertyType=5&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Commercial
                 Plot </a>
 
             </div>
@@ -150,24 +150,24 @@ if (Auth::user()) {
             </li>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <h5 class="mx-2">Residential</h5>
-              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=1">Apartment</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=2">Villa</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=6">Townhouse</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=3">Residential
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=1&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Apartment</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=2&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Villa</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=6&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Townhouse</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=3&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Residential
                 Plot</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=7">Residential
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=7&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Residential
                 Building</a>
 
               <hr>
 
               <h5 class="mx-2">Commercial</h5>
-              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=8">Office</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=9">Warehouse</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=10">Shop</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=4">Industrial
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=8&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Office</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=9&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Warehouse</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=10&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Shop</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=4&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Industrial
                 Land</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=11">Showroom</a>
-              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=5">Commercial
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=11&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Showroom</a>
+              <a class="dropdown-item" href="/search-propeties?purpose=renting&propertyType=5&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any">Commercial
                 Plot </a>
             </div>
           </div>
