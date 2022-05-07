@@ -21,7 +21,7 @@ $emirates = DB::table('states')
 
           <div class="input-group input border-0">
             <select class="custom-select" id="purpose" name="purpose" style="color:grey;" required>
-              <option value="" selected disabled>Purpose </option>
+              <option value="" selected disabled hidden>Purpose </option>
               <option value="renting" <?= (isset($_GET['purpose']) && $_GET['purpose'] == 'renting') ? "selected" : "" ?>>Rent</option>
               <option value="selling" <?= (isset($_GET['purpose']) && $_GET['purpose'] == 'selling') ? "selected" : "" ?>>Buy</option>
             </select>
@@ -33,7 +33,7 @@ $emirates = DB::table('states')
 
           <div class="input-group input border-0">
             <select class="custom-select " id="emirates" name="emirates" style="color:grey;">
-              <option value="" selected disabled>Emirates</option>
+              <option value="" selected disabled hidden>Emirates</option>
               @foreach($emirates as $emirate)
               @if(isset($_GET['emirates']) && $_GET['emirates'] == $emirate->id)
               <option value="{{$emirate->id}}" selected>{{$emirate->name}}</option>
@@ -50,7 +50,7 @@ $emirates = DB::table('states')
 
           <div class="input-group input border-0">
             <select class="custom-select " id="location" name="location" style="color:grey;">
-              <option value="" selected disabled>Location</option>
+              <option value="" selected disabled hidden>Location</option>
               @foreach($cities as $city)
               @if(isset($_GET['location']) && $_GET['location'] == $city->id)
               <option value="{{$city->id}}" data-emirate-id="{{$city->state_id}}" selected>{{$city->name}}</option>
@@ -69,7 +69,7 @@ $emirates = DB::table('states')
           <div class=" input-group input border-0">
 
             <select class="custom-select" id="propertyType" name="propertyType" style="color:grey; ">
-              <option value="" selected disabled>Property Type</option>
+              <option value="" selected disabled hidden>Property Type</option>
               <optgroup label="Residential" data-max-options="2">
                 <option value="1" <?= (isset($_GET['propertyType']) && $_GET['propertyType'] == 1) ? "selected" : "" ?>>Apartment</option>
                 <option value="2" <?= (isset($_GET['propertyType']) && $_GET['propertyType'] == 2) ? "selected" : "" ?>>Villa</option>
@@ -90,7 +90,7 @@ $emirates = DB::table('states')
 
           </div>
 
-        </div>
+        </div>*-
 
 
       </div>
@@ -101,7 +101,7 @@ $emirates = DB::table('states')
           <div class=" input-group input border-0">
 
             <select class="custom-select " id="beds" name="beds" style="color:grey;">
-              <option value="" selected disabled>Beds </option>
+              <option value="" selected disabled hidden>Beds </option>
               <option value="0" <?= (isset($_GET['beds']) && $_GET['beds'] == 0) ? "selected" : "" ?>>Studio</option>
               <option value="1" <?= (isset($_GET['beds']) && $_GET['beds'] == 1) ? "selected" : "" ?>>1</option>
               <option value="2" <?= (isset($_GET['beds']) && $_GET['beds'] == 2) ? "selected" : "" ?>>2</option>
