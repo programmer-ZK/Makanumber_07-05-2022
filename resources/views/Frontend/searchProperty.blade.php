@@ -40,18 +40,18 @@ if ($propPurpose == "renting") {
 ?>
 
 
-<div class="mt-3 pb-5 properties ml-4 mr-4">
 
-  <div class="row no-gutters" style="width: 93% !important; margin-left: 2%;">
-    <div class="col-sm-12 border" style="padding: 10px">
-      <span>
-        <a href="/">Home</a>
-        <a href="/"><i class="fa fa-angle-right"></i> <?= $purpose ?></a>
-        <a href="#"> <i class="fa fa-angle-right"></i> <span style="color:#00B4A2;"><?= $type ?></span></a>
-      </span>
-    </div>
-  </div>
+<section class="border mt-2 mb-4 pt-2 pb-2" style="border-radius:3px;font-family: 'Montserrat', sans-serif !important; margin: 0px 20px; padding: 18px; width: 90%; margin-left: 4%;">
+  <section class="row pl-2">
+    <span>
+      <a href="/">Home</a>
+      <a href="#"><i class="fa fa-angle-right"></i> <?= $purpose ?></a>
+      <a href="#"> <i class="fa fa-angle-right"></i> <span style="color:#00B4A2;"><?= $type ?></span></a>
+    </span>
+  </section>
+</section>
 
+<div class="mt-3 pb-5 ml-4 mr-4">
 
   <div class="row mb-2 mt-3">
     <div class="col-sm-8">
@@ -153,7 +153,7 @@ if ($propPurpose == "renting") {
                 @endif
               </span>
               @php
-              $avatar =  DB::table('media_files')->where('id', $user['avatar_id'])->first();
+              $avatar = DB::table('media_files')->where('id', $user['avatar_id'])->first();
               @endphp
               <img src="{{asset('public/storage/'.$avatar->url)}}" style="width:24px; height:24px; border-radius: 50%; float:right !important; text-align:right !important; " class="mb-1" />
               @else

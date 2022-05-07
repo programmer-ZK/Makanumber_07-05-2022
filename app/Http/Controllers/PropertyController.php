@@ -271,18 +271,30 @@ class PropertyController extends Controller
     if ($request->filled('purpose')) {
       $query = $query->where('re_properties.status', $request->purpose);
     }
-    if ($request->filled('areaFrom') && $request->filled('areaTo')) {
-      $query  = $query->whereBetween('re_properties.square', [$request->areaFrom, $request->areaTo]);
+
+    if ($request->filled('areaTo') && $request->input('areaTo') != 'any') {
+      if ($request->filled('areaFrom') && $request->filled('areaTo')) {
+        $query  = $query->whereBetween('re_properties.square', [$request->areaFrom, $request->areaTo]);
+      }
+    } else {
+      $query  = $query->where('re_properties.square', '>=', $request->areaFrom);
     }
+
     if ($request->filled('propertyType')) {
       $query  = $query->where('re_property_categories.category_id', $request->propertyType);
     }
     if ($request->filled('beds')) {
       $query  = $query->where('re_properties.number_bedroom', $request->beds);
     }
-    if ($request->filled('priceFrom') && $request->filled('priceTo')) {
-      $query  = $query->whereBetween('re_properties.price', [$request->priceFrom, $request->priceTo]);
+
+    if ($request->filled('priceTo') && $request->input('priceTo') != 'any') {
+      if ($request->filled('priceFrom') && $request->filled('priceTo')) {
+        $query  = $query->whereBetween('re_properties.price', [$request->priceFrom, $request->priceTo]);
+      }
+    } else {
+      $query  = $query->where('re_properties.price', '>=', $request->priceFrom);
     }
+
     $results = $query->where('is_featured', 1)->get();
     $data = $request->all();
     return view('Frontend.searchProperty')->with(compact('results', 'data'));
