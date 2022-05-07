@@ -20,7 +20,7 @@
       <hr class="green1 pl-2 pr-2" />
       <ul class="ul">
         <li class="li pb-3">
-          <a href="/about-us" style=" color:black !important;">About</a>
+          <a href="/about-us" style=" color:black !important;">About Us</a>
         </li>
 
         <li class="li pb-3">
