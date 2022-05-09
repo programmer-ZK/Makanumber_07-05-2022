@@ -742,7 +742,7 @@ if (Auth::user()) {
       height: 200px; */
       z-index: 1;
       background-color: white !important;
-      margin-left: -70px !important;
+      margin-left: -90px !important;
     }
 
     .column {
