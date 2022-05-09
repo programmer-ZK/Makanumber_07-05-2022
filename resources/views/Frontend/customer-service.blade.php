@@ -69,16 +69,25 @@
         @csrf
         <section>
           <div class="form-group">
-            <label for="exampleInputEmail1" style="color: black !important; ">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" name="email">
+            <label for="email" style="color: black !important; ">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" name="email">
           </div>
         </section>
 
         <section>
 
           <div class="form-group">
-            <label for="exampleInputEmail1" style="color: black !important; ">Name</label>
-            <input type="text" class="form-control" placeholder="Enter your name" name="name">
+            <label for="name" style="color: black !important; ">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your name" name="name">
+
+          </div>
+        </section>
+
+        <section>
+
+          <div class="form-group">
+            <label for="phone" style="color: black !important; ">Phone</label>
+            <input type="text" id="phone" class="form-control" placeholder="+971 55 xxxxxx" name="phone">
 
           </div>
         </section>
