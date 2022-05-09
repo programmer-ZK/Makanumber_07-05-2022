@@ -60,7 +60,7 @@ if (Auth::user()) {
       color: grey;
     }
 
-    
+
 
 
 
