@@ -17,11 +17,11 @@ $state = \Botble\Location\Models\State::with(['cities.properties'])
   }
 </style>
 
-{!! Theme::header() !!}
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- {!! Theme::header() !!} -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> -->
 
 
-<div class="">
+<div class="w-100">
   @include('layouts.property_search_form')
 </div>
 
@@ -34,7 +34,7 @@ if ($property->type == 'sale') {
 }
 ?>
 
-<section class="bread_crum" class="border mt-2 mb-4 pt-2 pb-2" style="border-radius:3px;font-family: 'Montserrat', sans-serif !important; margin: 0px 20px; padding: 18px; width: 90%; margin-left: 4%;">
+<section class="bread_crum border mt-2 mb-4 pt-2 pb-2" style="border-radius:3px;font-family: 'Montserrat', sans-serif !important; margin: 0px 20px; padding: 18px; width: 90%; margin-left: 4%;">
   <section class="row pl-2">
     <span>
       <a href="/" style="color:black;">Home</a>

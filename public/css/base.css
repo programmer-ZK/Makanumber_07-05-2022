@@ -8,7 +8,16 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.searchBtn {
+    padding-left: 0px !important;
+  }
 
+  .searchBtn button {
+    background-color: #00B4A2;
+    width: 100%;
+    margin: 0px !important;
+  }
+  
 /* --------------------------  
       All the css is here.
 ----------------------------*/

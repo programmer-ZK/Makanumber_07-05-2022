@@ -55,20 +55,19 @@ if (Auth::user()) {
       margin: 0px 2rem;
     }
 
-    .property_icon div {
-      /* width: 50%; */
-    }
-
     .property_icon i {
       font-size: 40px;
       color: grey;
     }
 
+    
+
+
 
     @media screen and (max-width: 480px) {
 
       .property_icon {
-        margin: 0px 0rem;
+        margin: 10px 0rem;
       }
 
       .property_icon div {
@@ -81,10 +80,10 @@ if (Auth::user()) {
 
       .bread_crum {
         border: 1px solid lightgrey;
-        padding: 10px 20px !important; 
+        padding: 10px 20px !important;
         margin: 10px auto !important;
         border-radius: 5px;
-        width: 90%  ;
+        width: 90%;
       }
 
     }
