@@ -1,9 +1,4 @@
-<!-- @extends('layouts.master') -->
 
-
-@section('title', 'Search Property | Makanumber')
-
-@section('content')
 
 <?php
 $bannerImage = \App\Models\Advertisement::all();
