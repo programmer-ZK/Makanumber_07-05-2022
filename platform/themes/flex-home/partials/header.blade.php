@@ -60,11 +60,9 @@ if (Auth::user()) {
       color: grey;
     }
 
-
-
-
-
     @media screen and (max-width: 480px) {
+
+      
 
       .property_icon {
         margin: 10px 0rem;
@@ -740,8 +738,8 @@ if (Auth::user()) {
     }
 
     .boxright {
-      width: 320px;
-      height: 200px;
+      /* width: 320px;
+      height: 200px; */
       z-index: 1;
       background-color: white !important;
       margin-left: -70px !important;
@@ -804,8 +802,8 @@ if (Auth::user()) {
       }
 
       .boxright {
-        width: 320px;
-        height: 250px;
+        /* width: 320px;
+        height: 250px; */
         z-index: 1;
         background-color: white !important;
         padding-bottom: 40px !important;

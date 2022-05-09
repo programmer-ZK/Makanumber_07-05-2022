@@ -73,7 +73,7 @@ if ($property->type == 'sale') {
 
 
 
-    <div class="col-md-8" style="text-align:left !important;font-family: 'Montserrat', sans-serif !important;">
+    <div class="col-12 col-lg-8 col-md-8 col-sm-12" style="text-align:left !important;font-family: 'Montserrat', sans-serif !important;">
       <button style="color: white; background-color: #00B4A2; padding: 5px; border: #00B4A2; margin-top: 20px; border-radius: 4px;"><i class="fa fa-tag"></i> For {{$property->type}} </button>
       <h3 style="font-weight:bold; font-size:24px;" class="mt-4">AED {{ $price }} </h3>
       <p style="color: #FB9F35;">Added {{ $property->created_att }}</p>
@@ -125,7 +125,8 @@ if ($property->type == 'sale') {
       <p>{!! clean($property->content) !!}</p>
 
     </div>
-    <div class="col-md-4 p-5 column " style="font-family: 'Montserrat', sans-serif !important; ">
+
+    <div class="col-12 col-lg-3 col-md-3 col-sm-12 p-5 column " style="font-family: 'Montserrat', sans-serif !important; ">
 
       <div class="boxright p-3">
 
