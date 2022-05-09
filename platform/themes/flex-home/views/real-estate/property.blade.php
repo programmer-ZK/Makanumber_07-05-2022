@@ -1,3 +1,10 @@
+@extends('layouts.master')
+
+
+@section('title', 'Search Property | Makanumber')
+
+@section('content')
+
 <?php
 $bannerImage = \App\Models\Advertisement::all();
 $users = \App\Models\UserModel::where(['id' => $property->author_id])->get();
@@ -17,8 +24,8 @@ $state = \Botble\Location\Models\State::with(['cities.properties'])
   }
 </style>
 
-<!-- {!! Theme::header() !!} -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- {!! Theme::header() !!}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> -->
 
 
 <div class="w-100">
@@ -353,3 +360,7 @@ if ($property->type == 'sale') {
 
   }
 </style>
+
+
+
+@stop
