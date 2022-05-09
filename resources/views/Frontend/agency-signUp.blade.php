@@ -133,7 +133,7 @@
             <section class="col-6 ">
               <div class="form-group">
                 <label for="phone" style="color:black;">Phone (optional)</label>
-                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone No">
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+971 55 xxxxxx">
               </div>
             </section>
 
