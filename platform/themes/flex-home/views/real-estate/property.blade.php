@@ -19,8 +19,7 @@ $state = \Botble\Location\Models\State::with(['cities.properties'])
   }
 </style>
 
-<!-- {!! Theme::header() !!} -->
-<script src="jquery-3.5.1.min.js"></script>
+{!! Theme::header() !!}
 
 
 <div class="w-100">
