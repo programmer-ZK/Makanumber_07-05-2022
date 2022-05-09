@@ -34,13 +34,13 @@ $emirates = DB::table('states')
           <div class="input-group input border-0">
             <select class="custom-select " id="emirates" name="emirates" style="color:grey;">
               <option value="" selected disabled hidden>Emirates</option>
-              <option value="3" selected>Abu Dhabi & Al Ain</option>
-              <option value="1" selected>Dubai </option>
-              <option value="4" selected>Sharjah</option>
-              <option value="5" selected>Ajman</option>
-              <option value="2" selected>Umm al Quwain </option>
-              <option value="7" selected>Ras al Khaimah</option>
-              <option value="6" selected>Fujairah </option>
+              <option value="3">Abu Dhabi & Al Ain</option>
+              <option value="1">Dubai </option>
+              <option value="4">Sharjah</option>
+              <option value="5">Ajman</option>
+              <option value="2">Umm al Quwain </option>
+              <option value="7">Ras al Khaimah</option>
+              <option value="6">Fujairah </option>
             </select>
           </div>
 
