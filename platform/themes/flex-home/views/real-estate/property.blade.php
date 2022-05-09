@@ -82,7 +82,7 @@ if ($property->type == 'sale') {
       <!-- <i class="fa-solid fa-location-dot"></i> -->
       <div class="row" style="font-family: 'Montserrat', sans-serif !important;">
 
-        <div class="col-lg-2 col-sm-2 property_icon">
+        <div class=" col-6 col-lg-2 col-md-3 col-sm-6 property_icon">
           <div class="float-left ">
             <i class="fa fa-home"></i>
           </div>
@@ -92,7 +92,7 @@ if ($property->type == 'sale') {
           </div>
         </div>
 
-        <div class="col-lg-2 col-sm-2 property_icon">
+        <div class=" col-6 col-lg-2 col-md-3 col-sm-6 property_icon">
           <div class="float-left ">
             <i class="fa fa-chart-area "></i>
           </div>
@@ -102,7 +102,7 @@ if ($property->type == 'sale') {
           </div>
         </div>
 
-        <div class="col-lg-2 col-sm-2 property_icon">
+        <div class=" col-6 col-lg-2 col-md-3 col-sm-6 property_icon">
           <div class="float-left ">
             <i class="fa fa-bed"></i>
           </div>
@@ -112,7 +112,7 @@ if ($property->type == 'sale') {
           </div>
         </div>
 
-        <div class="col-lg-2 col-sm-2 property_icon">
+        <div class=" col-6 col-lg-2 col-md-3 col-sm-6 property_icon">
           <div class="float-left ">
             <i class="fa fa-bath"></i>
           </div>
