@@ -299,7 +299,7 @@ $emirates = DB::table('states')
         </div>
 
         <div class="col-lg-1 ml-3 mt-1 searchBtn" style="padding-left:0px !important; ">
-          <button class="btn btn-success button" type="submit" style="background-color:#00B4A2; width:100%;">Search</button>
+          <button class="btn btn-success button" type="submit" style="background-color:#00B4A2; width:100%;margin: 0px !important;">Search</button>
         </div>
       </div>
     </div>

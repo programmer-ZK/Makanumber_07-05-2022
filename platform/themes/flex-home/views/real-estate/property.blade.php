@@ -34,7 +34,7 @@ if ($property->type == 'sale') {
 }
 ?>
 
-<section class="border mt-2 mb-4 pt-2 pb-2" style="border-radius:3px;font-family: 'Montserrat', sans-serif !important; margin: 0px 20px; padding: 18px; width: 90%; margin-left: 4%;">
+<section class="bread_crum" class="border mt-2 mb-4 pt-2 pb-2" style="border-radius:3px;font-family: 'Montserrat', sans-serif !important; margin: 0px 20px; padding: 18px; width: 90%; margin-left: 4%;">
   <section class="row pl-2">
     <span>
       <a href="/" style="color:black;">Home</a>
@@ -80,41 +80,41 @@ if ($property->type == 'sale') {
       <!-- <i class="fa-solid fa-location-dot"></i> -->
       <div class="row" style="font-family: 'Montserrat', sans-serif !important;">
 
-        <div class="col-lg-2 col-sm-2 my-2" style="margin: 0px 1rem;">
-          <div class="float-left py-1 w-50">
-            <i class="fa fa-home" style="font-size:40px; color:grey;"></i>
+        <div class="col-lg-2 col-sm-2 property_icon">
+          <div class="float-left ">
+            <i class="fa fa-home"></i>
           </div>
-          <div class="float-right text-left w-50">
+          <div class="float-right text-left ">
             <h5>{{ implode(', ', $property->categories()->pluck('name')->all()) }}</h5>
             <p>Type</p>
           </div>
         </div>
 
-        <div class="col-lg-2 col-sm-2 my-2" style="margin: 0px 1rem;">
-          <div class="float-left py-1 w-50">
-            <i class="fa fa-chart-area " style="font-size:40px; color:grey;"></i>
+        <div class="col-lg-2 col-sm-2 property_icon">
+          <div class="float-left ">
+            <i class="fa fa-chart-area "></i>
           </div>
-          <div class="float-right text-left w-50">
+          <div class="float-right text-left ">
             <h5>{{$property->square }}</h5>
             <p>Sq. ft</p>
           </div>
         </div>
 
-        <div class="col-lg-2 col-sm-2 my-2" style="margin: 0px 1rem;">
-          <div class="float-left py-1 w-50">
-            <i class="fa fa-bed" style="font-size:40px; color:grey;"></i>
+        <div class="col-lg-2 col-sm-2 property_icon">
+          <div class="float-left ">
+            <i class="fa fa-bed"></i>
           </div>
-          <div class="float-right text-left w-50">
+          <div class="float-right text-left ">
             <h5>{{ number_format($property->number_bedroom) }}</h5>
             <p>{{ __('Bedrooms') }}</p>
           </div>
         </div>
 
-        <div class="col-lg-2 col-sm-2 my-2" style="margin: 0px 1rem;">
-          <div class="float-left py-1 w-50">
-            <i class="fa fa-bath" style="font-size:40px; color:grey;"></i>
+        <div class="col-lg-2 col-sm-2 property_icon">
+          <div class="float-left ">
+            <i class="fa fa-bath"></i>
           </div>
-          <div class="float-right text-left w-50">
+          <div class="float-right text-left ">
             <h5>{{ number_format($property->number_bathroom) }}</h5>
             <p>{{ __('Bathrooms') }}</p>
           </div>
