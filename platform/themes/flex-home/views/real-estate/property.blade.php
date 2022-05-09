@@ -357,5 +357,3 @@ if ($property->type == 'sale') {
 </style>
 
 
-
-@stop
