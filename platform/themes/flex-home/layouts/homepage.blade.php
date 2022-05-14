@@ -11,9 +11,8 @@ $property = DB::table('re_properties')
   ->where('moderation_status', 'approved')
   ->get();
 
-$cities = DB::table('cities')
-  ->select('*')
-  ->get();
+$cities23 = DB::select('SELECT cities.id, cities.name, states.name AS stname FROM `cities` JOIN states on cities.state_id = states.id;');
+
 
 $propertyTypes = DB::table('re_categories')
   ->select('*')
@@ -77,6 +76,67 @@ $pkg = [];
 
 ?>
 
+<style>
+  input[list] {
+    padding: 10px;
+    font-size: 1em;
+    width: calc(100% - 20px);
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+  }
+
+  input[list]:focus {
+    outline: none;
+  }
+
+  input[list]+div[list] {
+    margin-top: 40px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    max-width: calc(100% - 10px);
+    background: #FFF;
+    border: var(--border);
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 3px -3px #333;
+    scrollbar-width: thin;
+    scrollbar-color: #BBB #EEE;
+    z-index: 100;
+  }
+
+  input[list]+div[list]::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  input[list]+div[list]::-webkit-scrollbar-track {
+    background: #C0C3C6;
+  }
+
+  input[list]+div[list]::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #C0C3C6;
+  }
+
+  input[list]+div[list] span {
+    display: block;
+    padding: 7px 5px 7px 20px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  input[list]+div[list] span:not(:last-child) {
+    border-bottom: 1px solid #EEE;
+  }
+
+  input[list]+div[list] span:hover {
+    background: rgba(100, 120, 140, .2);
+  }
+</style>
 
 <style>
   nav {
@@ -145,6 +205,7 @@ $pkg = [];
       left: 0;
       position: relative;
     }
+
     #slogan h1 {
       font-size: 27px;
     }
@@ -243,6 +304,7 @@ $pkg = [];
 
     </div>
 
+
     <div class="mx-auto">
 
       <!-- Search Engine End -->
@@ -256,6 +318,39 @@ $pkg = [];
         </div>
       </div>
 
+
+      <div class="container text-center my-3 pl-5 pr-5" style="background-color:#ffffff; padding-top:40px; padding-bottom:40px;">
+        <div class="row">
+          <div class="col-12 col-lg-4 col-md-12 col-sm-12">
+            <div class="card h-100" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">BUY-SELL-RENT</h5>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-text text-justify">With numerable options, we find you best deals in real estate market, Find your next Home, Apartment, Shop, Office or Land with us.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-12 col-sm-12">
+            <div class="card h-100" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">MANAGE PROPERTY</h5>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-text text-justify">Manage your property portfolios by a distinct feature called “My Makan Dashboard”. It’s for owners to manage their investment portfolio by tracking their property value over time, researching and managing home improvements, and scouting other similar properties in the neighborhood.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-12 col-sm-12">
+            <div class="card h-100" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">HOME IMPROVEMENTS</h5>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-text text-justify">We know the best design and décor for you and what fits out in your budget that you allow us in order to make your living experience beautiful. </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <div class="container-fluid text-center pl-5 pr-5" style="background-color:#2A2A2A; padding-top:40px; padding-bottom:40px;">
         <div class="row" id="myDiv">
@@ -393,11 +488,11 @@ $pkg = [];
                           @endif
                         </span>
                         @php
-                        $avatar =  DB::table('media_files')->where('id', $user['avatar_id'])->first();
+                        $avatar = DB::table('media_files')->where('id', $user['avatar_id'])->first();
                         @endphp
                         <img src="{{ asset('public/storage/' . $avatar->url) }}" style="width:24px; height:24px; border-radius: 50%; " alt="profile-pic" class="mb-1 userName" />
                         @else
-                        
+
                         <span class="pl-2 pr-2 userName">{{ $user['first_name'] }}
                           {{ $user['last_name'] }}</span> <span class="userName"><span class="icon"><i class="fa fa-user" aria-hidden="true" style="height:34px; border-radius:5px !important;  "></i></span></span>
                         @endif
@@ -561,10 +656,10 @@ $pkg = [];
                         @if ($doc_count >= 1)
                         <i class="fas fa-badge-check" aria-hidden="true" style="color:#00b4a2;"></i>
                         @endif</span>
-                        @php
-                        $avatar =  DB::table('media_files')->where('id', $user['avatar_id'])->first();
-                        @endphp
-                        <img src="{{ asset('public/storage/' . $avatar->url) }}" style="width:24px; height:24px; border-radius: 50%; " alt="profile-pic" class="mb-1 userName" />
+                      @php
+                      $avatar = DB::table('media_files')->where('id', $user['avatar_id'])->first();
+                      @endphp
+                      <img src="{{ asset('public/storage/' . $avatar->url) }}" style="width:24px; height:24px; border-radius: 50%; " alt="profile-pic" class="mb-1 userName" />
 
                       @else
                       <span class="pl-2 pr-2 userName">{{ $user['first_name'] }}
@@ -791,5 +886,152 @@ $pkg = [];
 
 {!! Theme::partial('footer') !!}
 
+
+<script>
+  $(document).ready(function() {
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const get_purpose = urlParams.get('purpose')
+    const get_location = urlParams.get('location')
+
+
+
+
+    $('#emirates').on('change', function() {
+      state_id = $("#emirates option:selected").val();
+      if (state_id != null) {
+        $("#location > option").css("display", "none");
+        $("#location > option[data-emirate-id=" + state_id + "]").css("display", "inline-block");
+        $("#location").attr("required", "required")
+      }
+    });
+
+    if (urlParams.has('location')) {
+      var emirate_id = $('#location option[value=' + get_location + ']').data('emirate-id');
+      $('#emirates option[value=' + emirate_id + ']').attr('selected', 'selected');
+    }
+
+    if (urlParams.has('purpose')) {
+      if (get_purpose == "selling") {
+        $(".renting").css("display", "none");
+        $(".selling").css("display", "inline-block");
+      }
+      if (get_purpose == "renting") {
+        $(".selling").css("display", "none");
+        $(".renting").css("display", "inline-block");
+      }
+    }
+
+    $('#purpose').on('change', function() {
+      purpose = $("#purpose option:selected").val();
+
+      if (purpose != null) {
+        if (purpose == "selling") {
+          $(".renting").css("display", "none");
+          $(".selling").css("display", "inline-block");
+        }
+        if (purpose == "renting") {
+          $(".selling").css("display", "none");
+          $(".renting").css("display", "inline-block");
+        }
+      }
+    });
+
+
+
+    $("#srch_form_home").submit(function(e) {
+      e.preventDefault();
+    });
+
+    $("#srch_form_home").submit(function(e) {
+      var location = $('#location').val();
+      if (location == null || location <= 0 || location == undefined) {
+        alert('Select a location');
+      }
+    });
+
+    $(document).on('dblclick', 'input[list]', function(event) {
+      event.preventDefault();
+      var str = $(this).val();
+      $('div[list=' + $(this).attr('list') + '] span').each(function(k, obj) {
+        if ($(this).html().toLowerCase().indexOf(str.toLowerCase()) < 0) {
+          $(this).hide();
+        }
+      })
+      $('div[list=' + $(this).attr('list') + ']').toggle(100);
+      $(this).focus();
+    })
+
+    $(document).on('blur', 'input[list]', function(event) {
+      event.preventDefault();
+      var list = $(this).attr('list');
+      setTimeout(function() {
+        $('div[list=' + list + ']').hide(100);
+      }, 100);
+    })
+
+    $(document).on('click', 'div[list] span', function(event) {
+      event.preventDefault();
+      var list = $(this).parent().attr('list');
+      var item = $(this).html();
+      var city_id = $(this).data('state-id');
+      $('input[list=' + list + ']').val(item);
+      $('div[list=' + list + '] > input').val(city_id);
+      $("#srch_form_home").submit(function(e) {
+        $(this).unbind('submit').submit()
+      });
+      $('div[list=' + list + ']').hide(100);
+    })
+
+    $(document).on('keyup', 'input[list]', function(event) {
+      event.preventDefault();
+      var list = $(this).attr('list');
+      var divList = $('div[list=' + $(this).attr('list') + ']');
+      if (event.which == 27) { // esc
+        $(divList).hide(200);
+        $(this).focus();
+      } else if (event.which == 13) { // enter
+        if ($('div[list=' + list + '] span:visible').length == 1) {
+          var str = $('div[list=' + list + '] span:visible').html();
+          $('input[list=' + list + ']').val(str);
+          $('div[list=' + list + ']').hide(100);
+        }
+      } else if (event.which == 9) { // tab
+        $('div[list]').hide();
+      } else {
+        $('div[list=' + list + ']').show(100);
+        var str = $(this).val();
+        $('div[list=' + $(this).attr('list') + '] span').each(function() {
+          if ($(this).html().toLowerCase().indexOf(str.toLowerCase()) < 0) {
+            $(this).hide(200);
+          } else {
+            $(this).show(200);
+          }
+        })
+      }
+    })
+
+
+
+    // $('#cities').on('change', function() {
+    //   var location = $('#location').val();
+    //   console.log('Location : ' + location);
+    //   alert('cities');
+    //   if (location == null || location <= 0 || location == undefined) {
+    //     $("#srch_form_home").submit(function(e) {
+    //       e.preventDefault();
+    //     });
+    //     alert("can't Submit");
+    //   } else {
+    //     $("#srch_form_home").submit(function(e) {
+    //       $(this).unbind('submit').submit()
+    //     });
+    //   }
+    // });
+
+  });
+</script>
 </div>
 </div>

@@ -8,10 +8,9 @@ $emirates = DB::table('states')
   ->get();
 ?>
 
-
 <div id="search-form12">
 
-  <form action="/search-propeties" method="get">
+  <form action="/search-propeties" id="srch_form_home" method="get" onkeydown="return event.key != 'Enter';">
     @csrf
 
     <div class="mt-3">
@@ -29,37 +28,16 @@ $emirates = DB::table('states')
 
         </div>
 
-        <div class="col-lg-1" style="padding-left:0px !important">
+        <div class="col-lg-3" style="padding-left:0px !important">
 
           <div class="input-group input border-0">
-            <select class="custom-select " id="emirates" name="emirates" style="color:grey;">
-              <option value="" selected disabled hidden>Emirates</option>
-              <option value="3">Abu Dhabi & Al Ain</option>
-              <option value="1">Dubai </option>
-              <option value="4">Sharjah</option>
-              <option value="5">Ajman</option>
-              <option value="2">Umm al Quwain </option>
-              <option value="7">Ras al Khaimah</option>
-              <option value="6">Fujairah </option>
-            </select>
-          </div>
-
-        </div>
-
-        <div class="col-lg-2" style="padding-left:0px !important">
-
-          <div class="input-group input border-0">
-            <select class="custom-select " id="location" name="location" style="color:grey;">
-              <option value="" selected disabled hidden>Location</option>
-              @foreach($cities as $city)
-              @if(isset($_GET['location']) && $_GET['location'] == $city->id)
-              <option value="{{$city->id}}" data-emirate-id="{{$city->state_id}}" selected>{{$city->name}}</option>
-              @else
-              <option value="{{$city->id}}" data-emirate-id="{{$city->state_id}}">{{$city->name}}</option>
-              @endif
+            <input class="form-control" type="text" id="cities" name="cities" list="list-cities" placeholder="Emirates/Locations" autocomplete="off" required />
+            <div list="list-cities">
+              <input type="hidden" id="location" name="location" value="">
+              @foreach($cities23 as $city)
+              <span data-state-id='{{$city->id}}'>{{$city->name}} ({{$city->stname}})</span>
               @endforeach
-
-            </select>
+            </div>
           </div>
 
         </div>
@@ -311,33 +289,4 @@ $emirates = DB::table('states')
     </div>
   </form>
 
-  <script>
-    $(document).ready(function() {
-      $('#emirates').on('change', function() {
-        state_id = $("#emirates option:selected").val();
-        if (state_id != null) {
-          $("#location > option").css("display", "none");
-          $("#location > option[data-emirate-id=" + state_id + "]").css("display", "inline-block");
-          $("#location").attr("required", "required")
-        }
-      });
-
-
-      $('#purpose').on('change', function() {
-        purpose = $("#purpose option:selected").val();
-
-        if (purpose != null) {
-          if (purpose == "selling") {
-            $(".renting").css("display", "none");
-            $(".selling").css("display", "inline-block");
-          }
-          if (purpose == "renting") {
-            $(".selling").css("display", "none");
-            $(".renting").css("display", "inline-block");
-          }
-        }
-      });
-
-    });
-  </script>
 </div>

@@ -46,7 +46,26 @@ if ($propPurpose == "renting") {
     <span>
       <a href="/">Home</a>
       <a href="#"><i class="fa fa-angle-right"></i> <?= $purpose ?></a>
-      <a href="#"> <i class="fa fa-angle-right"></i> <span style="color:#00B4A2;"><?= $type ?></span></a>
+      @if(isset($_GET['cities']))
+      <a href="/search-propeties?&purpose=selling&cities=<?= $_GET['cities'] ?>&location=<?= $_GET['location'] ?>&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any"> <i class="fa fa-angle-right"></i> <span style="color:#00B4A2;"><?= $_GET['cities'] ?></span></a>
+      @else
+      <?php
+      $city = DB::table('cities')
+        ->select('*')
+        ->where('id', '=', $_GET['location'])
+        ->first();
+
+      $emirate = DB::table('states')
+        ->select('name')
+        ->where('id', '=', $city->state_id)
+        ->first();
+
+      ?>
+      <a href="/search-propeties?&purpose=selling&location=<?= $_GET['location'] ?>&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any"> <i class="fa fa-angle-right"></i> <span style="color:#00B4A2;">{{$city->name }} ({{$emirate->name }}) </span></a>
+      @endif
+      @if($propType != null)
+      <a> <i class="fa fa-angle-right"></i> <span><?= $type ?></span></a>
+      @endif
     </span>
   </section>
 </section>

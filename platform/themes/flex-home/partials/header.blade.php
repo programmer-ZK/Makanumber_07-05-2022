@@ -48,8 +48,52 @@ if (Auth::user()) {
 
   <title>Makanumber.com</title>
 
-
   <style>
+    .share_icons_ul {
+      margin-left: -25px;
+    }
+
+    .share_icons_ul li {
+      float: left;
+    }
+
+    .share_icon {
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      padding: 5px;
+      background: #00B4A2;
+      color: red;
+      margin: 5px;
+      float: left;
+    }
+
+    .share_icon.twitter {
+      background-color: #1da1f2;
+    }
+
+    .share_icon.facebook {
+      background-color: #3b5998;
+    }
+
+    .share_icon.envelope {
+      background-color: grey;
+    }
+
+    .share_icon.pinterest {
+      background: #E60023;
+    }
+
+    .share_icon.linkedin {
+      background-color:  #0072b1;
+    }
+
+    .share_icon i {
+      color: white;
+      margin: 33%;
+    }
+
     .property_icon {
       width: auto !important;
       margin: 0px 2rem;
@@ -61,8 +105,6 @@ if (Auth::user()) {
     }
 
     @media screen and (max-width: 480px) {
-
-      
 
       .property_icon {
         margin: 10px 0rem;

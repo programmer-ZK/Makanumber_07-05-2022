@@ -48,7 +48,7 @@ class UserController extends Controller
 
     $ifEmailExists = DB::table('users')->where('email', $request->email)->value('email');
     if ($ifEmailExists == $request->email) {
-      echo "<script>alert('$ifEmailExists already exists!')</script>";
+      // echo "<script>alert('$ifEmailExists already exists!')</script>";
       return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register');
     } else {
       if ($user->save()) {
@@ -109,10 +109,17 @@ class UserController extends Controller
 
   public function memberSignUp(Request $request)
   {
-    $this->validate($request, [
-      'pswd1'     => 'required|min:6',
-      'pswd2' => 'same:pswd1',
-    ]);
+    $this->validate(
+      $request,
+      [
+        'pswd1'     => 'required|min:6',
+        'pswd2' => 'same:pswd1',
+      ],
+      [
+        'pswd2.same' => 'Passwords didn’t match. Please try again',
+        'pswd1.min' => 'The password must be at least 6 characters',
+      ]
+    );
 
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
@@ -134,7 +141,7 @@ class UserController extends Controller
 
     $ifEmailExists = DB::table('users')->where('email', $request->email)->value('email');
     if ($ifEmailExists == $request->email) {
-      echo "<script>alert('$ifEmailExists already exists!')</script>";
+      // echo "<script>alert('$ifEmailExists already exists!')</script>";
       return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register');
     } else {
       if ($user->save()) {

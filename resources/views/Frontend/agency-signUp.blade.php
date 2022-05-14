@@ -16,6 +16,11 @@
           {{ Session::get('success') }}
         </div>
         @endif
+        @if(Session::has('danger'))
+        <div class="alert alert-danger">
+          {{ Session::get('danger') }}
+        </div>
+        @endif
         @if ($errors->any())
         <div class="alert alert-danger">
           <ul>

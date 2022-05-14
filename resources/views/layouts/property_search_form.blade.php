@@ -305,49 +305,5 @@ $emirates = DB::table('states')
     </div>
   </form>
 
-  <script>
-    $(document).ready(function() {
-      $('#emirates').on('change', function() {
-        state_id = $("#emirates option:selected").val();
-        if (state_id != null) {
-          $("#location > option").css("display", "none");
-          $("#location > option[data-emirate-id=" + state_id + "]").css("display", "inline-block");
-          $("#location").attr("required", "required")
-        }
-      });
-
-
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-
-      const get_purpose = urlParams.get('purpose')
-
-      if (urlParams.has('purpose')) {
-        if (get_purpose == "selling") {
-          $(".renting").css("display", "none");
-          $(".selling").css("display", "inline-block");
-        }
-        if (get_purpose == "renting") {
-          $(".selling").css("display", "none");
-          $(".renting").css("display", "inline-block");
-        }
-      }
-
-      $('#purpose').on('change', function() {
-        purpose = $("#purpose option:selected").val();
-
-        if (purpose != null) {
-          if (purpose == "selling") {
-            $(".renting").css("display", "none");
-            $(".selling").css("display", "inline-block");
-          }
-          if (purpose == "renting") {
-            $(".selling").css("display", "none");
-            $(".renting").css("display", "inline-block");
-          }
-        }
-      });
-
-    });
-  </script>
+  
 </div>

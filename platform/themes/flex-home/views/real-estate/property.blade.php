@@ -1,5 +1,3 @@
-
-
 <?php
 $bannerImage = \App\Models\Advertisement::all();
 $users = \App\Models\UserModel::where(['id' => $property->author_id])->get();
@@ -153,12 +151,14 @@ if ($property->type == 'sale') {
 
         @endif
         <hr>
+        <div class="">
+          
+          <a href="tel:{{$user->phone}}" target="_blank" style="color:white;"><button class="btn btn-dark mr-3 float-right" style="width:130px;"><i class="fa fa-phone" aria-hidden="true"></i> Call Now </button> </a>
 
-        <a href="tel:{{$user->phone}}" target="_blank" style="color:white;"><button class="btn btn-dark mr-3" style="width:130px;"><i class="fa fa-phone" aria-hidden="true"></i> Call Now </button> </a>
+          <a href="https://api.whatsapp.com/send?phone={{$user->phone}}" target="_blank" style="color:white;"> <button class="btn btn-success mr-2 float-right" style="width:130px; float: left;"> <i class="fab fa-whatsapp" aria-hidden="true"></i> Whatsapp</button></a>
 
-        <a href="https://api.whatsapp.com/send?phone={{$user->phone}}" target="_blank" style="color:white;"> <button class="btn btn-success mr-2" style="width:130px; float: left;"> <i class="fab fa-whatsapp" aria-hidden="true"></i> Whatsapp</button></a>
-
-
+          <div style="clear: both;"></div>
+        </div>
         @endforeach
       </div>
 
@@ -356,5 +356,3 @@ if ($property->type == 'sale') {
 
   }
 </style>
-
-
