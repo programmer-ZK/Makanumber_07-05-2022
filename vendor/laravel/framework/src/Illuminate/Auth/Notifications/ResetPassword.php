@@ -85,9 +85,14 @@ class ResetPassword extends Notification
     {
         return (new MailMessage)
             ->subject(Lang::get('Reset Password Notification'))
-            ->line(Lang::get('You are receiving this email because we received a password reset request for your account.'))
+            ->line(Lang::get('We have received a request to reset your password.'))
+            ->line(Lang::get('If you did not make this request then please ignore this email.'))
+            ->line(Lang::get('Or, if you wish to do so! please click below to create a new password.'))
             ->action(Lang::get('Reset Password'), $url)
-            ->line(Lang::get('This password reset link will expire in :count minutes.', ['count' => config('auth.passwords.'.config('auth.defaults.passwords').'.expire')]))
+            ->line(Lang::get('Regards,'))
+            ->line(Lang::get('TEAM MKNB'))
+
+            ->line(Lang::get('This password reset link will expire in :count minutes.', ['count' => config('auth.passwords.' . config('auth.defaults.passwords') . '.expire')]))
             ->line(Lang::get('If you did not request a password reset, no further action is required.'));
     }
 
