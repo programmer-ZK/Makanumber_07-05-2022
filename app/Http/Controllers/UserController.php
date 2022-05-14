@@ -81,7 +81,7 @@ class UserController extends Controller
         $data = array("name" => $to_name, "body" => $body);
         Mail::send("activation", $data, function ($message) use ($to_name, $to_email) {
           $message->to($to_email, $to_name)
-            ->subject("Activation Email");
+            ->subject("Account Activation Email Makanumber.com");
           $message->from("noreply@makanumber.com", "Makanumber");
         });
 
@@ -100,7 +100,7 @@ class UserController extends Controller
           $user->documents = $documents->id;
           $user->save();
         }
-        return redirect()->back()->with('success', 'Agency Created Successfully! An activation email has sent to your email, check to login, it maybe in your spams folder');
+        return redirect()->back()->with('success', 'User Created Successfully, An activation email has been sent to your email. Please verify your account and get started.');
       } else {
         return redirect()->back()->with('danger', 'User denied!');
       }
@@ -174,11 +174,11 @@ class UserController extends Controller
         $data = array("name" => $to_name, "body" => $body);
         Mail::send("activation", $data, function ($message) use ($to_name, $to_email) {
           $message->to($to_email, $to_name)
-            ->subject("Activation Email");
+            ->subject("Account Activation Email Makanumber.com");
           $message->from("noreply@makanumber.com", "Makanumber");
         });
 
-        return redirect()->back()->with('success', 'User Created Successfully! An activation email has sent to your email, check to login, it maybe in your spams folder');
+        return redirect()->back()->with('success', 'User Created Successfully, An activation email has been sent to your email. Please verify your account and get started.');
       } else {
         return redirect()->back()->with('danger', 'User Denied!');
       }
