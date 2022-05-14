@@ -49,6 +49,20 @@ if (Auth::user()) {
   <title>Makanumber.com</title>
 
   <style>
+    .add-property {
+      background-color: #43454d;
+      color: white;
+      border: 1px solid #D3D3D3;
+      text-align: center;
+      padding: 5px 10px;
+
+    }
+
+    .add-property:hover {
+      background-color: transparent !important;
+      color: black !important;
+    }
+
     .share_icons_ul {
       margin-left: -25px;
     }
@@ -86,7 +100,7 @@ if (Auth::user()) {
     }
 
     .share_icon.linkedin {
-      background-color:  #0072b1;
+      background-color: #0072b1;
     }
 
     .share_icon i {
@@ -283,8 +297,7 @@ if (Auth::user()) {
           </li>
           @if (Auth::user())
           <li class="nav-item mt-1 ">
-            <a href="/add-property"><button class="btn btn-default" style="border:1px solid #D3D3D3;">Add
-                Property</button></a>
+            <a href="/add-property"><button class="btn btn-default add-property">Add Property</button></a>
           </li>
           @endif
 

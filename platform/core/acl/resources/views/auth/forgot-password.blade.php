@@ -99,7 +99,7 @@
       <section class="col-sm-4 ">
         <h2>FORGOT PASSWORD</h2>
         {!! Form::open(['route' => 'access.password.email', 'class' => 'forget-form']) !!}
-        <p>Enter the email address associated with your account and we will email you a link to reset password</p>
+        <p>Enter the email address associated with your account and we will send you a link for a password reset</p>
         <br>
         <div class="form-group mb-3" id="emailGroup">
           <label>{{ trans('core/acl::auth.login.email') }}</label>
