@@ -1,11 +1,12 @@
 <h1>
   Hello {{ $name }}, <br>
-
-  We would like to thank you for choosing Makanumber.com <br>
-
-  Please click on the link below to activate your account and get started.
-
 </h1>
+
+<h2>
+We would like to thank you for choosing Makanumber.com <br>
+
+Please click on the link below to activate your account and get started.
+</h2>
 
 
 
