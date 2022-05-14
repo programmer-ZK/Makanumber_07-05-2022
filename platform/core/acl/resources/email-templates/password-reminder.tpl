@@ -2,15 +2,21 @@
 
 <strong>Hello!</strong> <br /><br />
 
-You are receiving this email because we received a password reset request for your account. <br /><br />
+We have received a request to reset your password. <br /><br />
+
+If you did not make this request then please ignore this email. <br /><br />
+
+Or, if you wish to do so! please click below to create a new password. <br /><br />
+
 
 <a href="{{ reset_link }}">Reset password</a> <br /><br />
 
-If you did not request a password reset, no further action is required. <br /><br />
 
-Regards, <br />
 
-<strong>{{ site_title }}</strong>
+Regards,<br /><br />
+TEAM MKNB <br /><br />
+
+
 
 <hr />
 
