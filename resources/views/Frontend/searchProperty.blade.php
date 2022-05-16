@@ -50,18 +50,33 @@ if ($propPurpose == "renting") {
       <a href="/search-propeties?&purpose=selling&cities=<?= $_GET['cities'] ?>&location=<?= $_GET['location'] ?>&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any"> <i class="fa fa-angle-right"></i> <span style="color:#00B4A2;"><?= $_GET['cities'] ?></span></a>
       @else
       <?php
-      $city = DB::table('cities')
+      if (isset($_GET['location'])) {
+        $city = DB::table('cities')
+          ->select('*')
+          ->where('id', '=', $_GET['location'])
+          ->first();
+          $emirate = DB::table('states')
+          ->select('name')
+          ->where('id', '=', $city->state_id)
+          ->first();
+  
+      } else {
+        $city = DB::table('cities')
         ->select('*')
-        ->where('id', '=', $_GET['location'])
-        ->first();
+        ->get();
 
-      $emirate = DB::table('states')
+        $emirate = DB::table('states')
         ->select('name')
-        ->where('id', '=', $city->state_id)
-        ->first();
+        ->get();
+      }
 
+     
       ?>
+
+      @if (isset($_GET['location']))
+
       <a href="/search-propeties?&purpose=selling&location=<?= $_GET['location'] ?>&areaFrom=0&areaTo=any&priceFrom=0&priceTo=any"> <i class="fa fa-angle-right"></i> <span style="color:#00B4A2;">{{$city->name }} ({{$emirate->name }}) </span></a>
+      @endif
       @endif
       @if($propType != null)
       <a> <i class="fa fa-angle-right"></i> <span><?= $type ?></span></a>

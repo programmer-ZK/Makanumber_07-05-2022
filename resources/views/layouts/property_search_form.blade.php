@@ -51,6 +51,7 @@ $emirates = DB::table('states')
           <div class="input-group input border-0">
             <select class="custom-select " id="location" name="location" style="color:grey;">
               <option value="" selected disabled hidden>Location</option>
+
               @foreach($cities as $city)
               @if(isset($_GET['location']) && $_GET['location'] == $city->id)
               <option value="{{$city->id}}" data-emirate-id="{{$city->state_id}}" selected>{{$city->name}}</option>
