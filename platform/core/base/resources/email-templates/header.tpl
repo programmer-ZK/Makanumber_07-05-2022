@@ -77,13 +77,13 @@
                                                                    style="border-spacing: 0;">
                                                                 <tbody>
                                                                 <tr>
-                                                                    <td style="padding:15px;border-collapse:collapse; height: 70px; line-height: 70px">
+                                                                    <td style="padding:15px;border-collapse:collapse; height: 100px; line-height: 70px">
                                                                         <a href="{{ site_url }}" style="color: #fff; text-decoration: none !important;"
                                                                            target="_blank">
                                                                             <img title="Logo"
                                                                                  src="{{ site_logo }}"
-                                                                                 height="70"
-                                                                                 style="max-width: 107px;display: block !important;height: auto !important;"
+                                                                                 height="100"
+                                                                                 style="max-width: 150px;display: block !important;height: auto !important;"
                                                                                  alt="Logo" border="0"
                                                                                  hspace="0"
                                                                                  vspace="0"></a>
