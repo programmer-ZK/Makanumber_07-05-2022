@@ -1,6 +1,7 @@
 @extends('core/acl::auth.master')
 @section('content')
-    <p>{{ trans('core/acl::auth.reset_password') }}:</p>
+<br>
+    <p>Reset Password:</p>
     {!! Form::open(['route' => 'access.password.reset.post', 'method' => 'POST', 'class' => 'login-form']) !!}
         <div class="form-group mb-3 has-feedback{{ $errors->has('email') ? ' has-error' : '' }}" id="emailGroup">
             <label>{{ trans('core/acl::auth.reset.email') }}</label>
@@ -21,6 +22,7 @@
             <input type="hidden" name="token" value="{{ $token }}"/>
             <span class="signin">{{ trans('core/acl::auth.reset.update') }}</span>
         </button>
-        <div class="clearfix"></div>
+        <div class="clearfix"></div> 
     {!! Form::close() !!}
 @stop
+ 

@@ -319,32 +319,38 @@ $pkg = [];
       </div>
 
 
-      <div class="container text-center my-3 pl-5 pr-5" style="background-color:#ffffff; padding-top:40px; padding-bottom:40px;">
+      <div class=" text-center my-5 pl-5 pr-5 mb-5" style="background-color:#ffffff; padding-top:40px; padding-bottom:40px;">
         <div class="row">
           <div class="col-12 col-lg-4 col-md-12 col-sm-12">
-            <div class="card h-100" style="width: 18rem;">
+            <div class="card h-100 border-0" >
               <div class="card-body">
-                <h5 class="card-title">BUY-SELL-RENT</h5>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                <p class="card-text text-justify">With numerable options, we find you best deals in real estate market, Find your next Home, Apartment, Shop, Office or Land with us.</p>
+                <div class="card-block">
+                  <img src="/storage/icons/buy-sell-rent.png" class="mb-4" style="height: 100px;">
+                </div>
+                <h5 class="card-title my-2">BUY-SELL-RENT</h5>
+                <p class="card-text px-5 mt-3">With numerable options, we find you best deals in real estate market, Find your next Home, Apartment, Shop, Office or Land with us.</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-4 col-md-12 col-sm-12">
-            <div class="card h-100" style="width: 18rem;">
+            <div class="card h-100 border-0" >
               <div class="card-body">
-                <h5 class="card-title">MANAGE PROPERTY</h5>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                <p class="card-text text-justify">Manage your property portfolios by a distinct feature called “My Makan Dashboard”. It’s for owners to manage their investment portfolio by tracking their property value over time, researching and managing home improvements, and scouting other similar properties in the neighborhood.</p>
+                <div class="card-block">
+                  <img src="/storage/icons/manage-property.png" class="mb-4" style="height: 100px;">
+                </div>
+                <h5 class="card-title my-2">MANAGE PROPERTY</h5>
+                <p class="card-text px-5 mt-3">Manage your property portfolios by a distinct feature called “My Makan Dashboard”. It’s for owners to manage their investment portfolio by tracking their property value over time, researching and managing home improvements, and scouting other similar properties in the neighborhood.</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-4 col-md-12 col-sm-12">
-            <div class="card h-100" style="width: 18rem;">
+            <div class="card h-100 border-0" >
               <div class="card-body">
-                <h5 class="card-title">HOME IMPROVEMENTS</h5>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                <p class="card-text text-justify">We know the best design and décor for you and what fits out in your budget that you allow us in order to make your living experience beautiful. </p>
+                <div class="card-block">
+                  <img src="/storage/icons/Home-improvement.png" class="mb-4" style="height: 100px;">
+                </div>
+                <h5 class="card-title my-2">HOME IMPROVEMENTS</h5>
+                <p class="card-text px-5 mt-3">We know the best design and décor for you and what fits out in your budget that you allow us in order to make your living experience beautiful. </p>
               </div>
             </div>
           </div>
@@ -352,7 +358,7 @@ $pkg = [];
         </div>
       </div>
 
-      <div class="container-fluid text-center pl-5 pr-5" style="background-color:#2A2A2A; padding-top:40px; padding-bottom:40px;">
+      <div class="container-fluid text-center pl-5 pr-5 mt-5" style="background-color:#2A2A2A; padding-top:40px; padding-bottom:40px;">
         <div class="row" id="myDiv">
           <div class="col-12">
             <div class="text-center mb-5 heading">

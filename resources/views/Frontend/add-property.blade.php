@@ -25,10 +25,16 @@ $emirates = DB::table('states')
       -webkit-appearance: none;
       margin: 0;
     }
+
+    label,
+    input::-webkit-input-placeholder,
+    select {
+      font-weight: 500 !important;
+    }
   </style>
 
   <!-- Slider Image Section -->
-  <div class="conatiner " style="border-top:2px solid grey; ">
+  <div class="container">
     @if(Session::has('success'))
     <div class="alert alert-success">
       {{ Session::get('success') }}
@@ -43,16 +49,12 @@ $emirates = DB::table('states')
       </ul>
     </div>
     @endif
-    <div class="row slider ml-2" style=" background-color:#ffffff;color:black;">
-      <div class="col-sm-4 text-section mt-5">
-        <h6 class="ml-5">Makanumber</h6>
-        <h1 class="ml-5" style="font-weight:bold;">Add a</h1>
-        <h1 class="ml-5">Property</h1>
-        <br>
 
-      </div>
-      <div class="col-sm-8 img-section ">
-        <img class="img-fluid" src="https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+
+    <div class="">
+      <div class="img-section">
+        <img class="img-fluid" src="storage\banner\add-property_cover.jpeg"  style="margin-left: auto;
+  margin-right: auto;display: block; "/>
       </div>
     </div>
 
