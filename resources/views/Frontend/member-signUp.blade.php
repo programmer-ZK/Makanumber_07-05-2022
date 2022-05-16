@@ -39,7 +39,7 @@
   @if(Auth::user())
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top:-40px;">
     <a class="navbar-brand ml-5" href="/">
-      <img src="/frontend-images/logo.png" alt="logo-img" style="width:110px; height:30px;" />
+      <img src="/frontend-images/logo.svg" alt="logo-img" style="width:110px; height:30px;" />
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -131,7 +131,7 @@
   @else
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand ml-5" href="/">
-      <img src="/frontend-images/logo.png" alt="logo-img" style="width:110px; height:30px;" />
+      <img src="/frontend-images/logo.svg" alt="logo-img" style="width:110px; height:30px;" />
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

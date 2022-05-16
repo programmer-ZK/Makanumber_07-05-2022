@@ -135,7 +135,7 @@
 	<div class="main-content">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-weight:bold ; margin-top:-40px;font-family: 'Montserrat', sans-serif !important;">
       <a class="navbar-brand ml-5" href="/">
-        <img src="/frontend-images/logo.png" alt="logo-img" style="height:45px" />
+        <img src="/frontend-images/logo.svg" alt="logo-img" style="height:45px" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -317,7 +317,7 @@
 
 			<div class="footer_coloumn footer_coloumn_1 col-sm-3 ml-5 text-justify  ">
 				<a href="/">
-					<img src="/frontend-images/logo.png" alt="footer-img" style="width:290px; height:50px;" class="footer-img">
+					<img src="/frontend-images/logo.svg" alt="footer-img" style="width:290px; height:50px;" class="footer-img">
 				</a>
 				<p style="font-size:13px;" class="mt-3 foot-descip">Buying, Selling, Renting a property is an uphill
 					battle but do not stress it, we have got your back. Whether you are planning to buy, sell or rent,

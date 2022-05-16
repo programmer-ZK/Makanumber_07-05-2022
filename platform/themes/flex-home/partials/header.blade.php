@@ -195,7 +195,7 @@ if (Auth::user()) {
   <div class="main-content">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-weight:bold ; margin-top:-40px;font-family: 'Montserrat', sans-serif !important;">
       <a class="navbar-brand ml-5" href="/">
-        <img src="/frontend-images/logo.png" alt="logo-img" style="height:45px" />
+        <img src="/frontend-images/logo.svg" alt="logo-img" style="height:45px" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

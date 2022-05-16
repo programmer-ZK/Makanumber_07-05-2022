@@ -5,7 +5,7 @@
 
     <div class="footer_coloumn footer_coloumn_1 col-sm-3 ml-5 text-justify  ">
       <a href="/">
-        <img src="/frontend-images/logo.png" alt="footer-img" style="width:290px; height:50px;" class="footer-img">
+        <img src="/frontend-images/logo.svg" alt="footer-img" style="width:290px; height:50px;" class="footer-img">
       </a>
       <p style="font-size:13px;" class="mt-3 foot-descip">Buying, Selling, Renting a property is an uphill battle but do not stress it, we have got your back. Whether you are planning to buy, sell or rent, we can help you move forward, to experience the most unprecedented services along with enormous numbers of options according to your choice and preference because home is not just a place. IT’S A FEELING!</p>
       <div class="row social-icons">
