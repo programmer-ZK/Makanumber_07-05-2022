@@ -1,6 +1,6 @@
 {{ header }}
 
-<strong>Hello! 1233</strong> <br /><br />
+<strong>Dear, </strong> <br /><br />
 
 We have received a request to reset your password. <br /><br />
 
