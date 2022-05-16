@@ -83,7 +83,7 @@
                                                                             <img title="Logo"
                                                                                  src="{{ site_logo }}"
                                                                                  height="100"
-                                                                                 style="max-width: 150px;display: block !important;height: auto !important;"
+                                                                                 style="max-width: 200px;display: block !important;height: auto !important;"
                                                                                  alt="Logo" border="0"
                                                                                  hspace="0"
                                                                                  vspace="0"></a>
@@ -110,7 +110,7 @@
                                                                    style="border-spacing: 0;">
                                                                 <tbody>
                                                                 <tr>
-                                                                    <td style="font-size: 13px;line-height: 22px;color: #fff;padding: 15px;font-weight: normal;text-align: center;font-family: Tahoma, Helvetica, Arial, sans-serif;border-collapse: collapse;"><span style="display: inline-block; height: 70px; line-height: 70px;">{{ date_time }}</span></td>
+                                                                    <td style="font-size: 13px;line-height: 22px;color: #fff;padding: 15px;font-weight: normal;text-align: center;font-family: Tahoma, Helvetica, Arial, sans-serif;border-collapse: collapse;"><span style="display: inline-block; height: 100px; line-height: 100px;">{{ date_time }}</span></td>
                                                                 </tr>
                                                                 </tbody>
                                                             </table>
