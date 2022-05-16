@@ -62,5 +62,5 @@
     </div>
     {!! Form::close() !!}
 
-    {!! Form::modalAction('reset-template-to-default-modal', trans('core/setting::setting.email.confirm_reset'), 'info', trans('core/setting::setting.email.confirm_message'), 'reset-template-to-default-button', trans('core/setting::setting.email.continue')) !!}
+    
 @endsection
