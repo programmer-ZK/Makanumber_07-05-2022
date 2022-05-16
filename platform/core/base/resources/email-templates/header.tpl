@@ -7,7 +7,7 @@
 </head>
 <body style="margin: 0;">
 <table width="100%" id="mainStructure" border="0" cellspacing="0" cellpadding="0"
-       style="border-spacing: 0;">
+       style="background-color:#e1e1e1 ;border-spacing: 0;">
     <!-- START TAB TOP -->
     <tbody>
     <tr>
