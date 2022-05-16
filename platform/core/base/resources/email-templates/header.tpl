@@ -58,7 +58,7 @@
                                style="border-spacing: 0;">
                             <tbody>
                             <tr>
-                                <td valign="middle" bgcolor="e1e1e1" style="border-collapse: collapse;">
+                                <td valign="middle" bgcolor="3A3A3A" style="border-collapse: collapse;">
                                     <!-- start top navigation -->
                                     <table width="800" align="center" border="0" cellspacing="0" cellpadding="0"
                                            class="full-width" style="border-spacing: 0;">
@@ -110,7 +110,7 @@
                                                                    style="border-spacing: 0;">
                                                                 <tbody>
                                                                 <tr>
-                                                                    <td style="font-size: 13px;line-height: 22px;color: #FFF;padding: 15px;font-weight: normal;text-align: center;font-family: Tahoma, Helvetica, Arial, sans-serif;border-collapse: collapse;"><span style="display: inline-block; height: 70px; line-height: 70px;">{{ date_time }}</span></td>
+                                                                    <td style="font-size: 13px;line-height: 22px;color: #000;padding: 15px;font-weight: normal;text-align: center;font-family: Tahoma, Helvetica, Arial, sans-serif;border-collapse: collapse;"><span style="display: inline-block; height: 70px; line-height: 70px;">{{ date_time }}</span></td>
                                                                 </tr>
                                                                 </tbody>
                                                             </table>
