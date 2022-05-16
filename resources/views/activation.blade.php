@@ -9,11 +9,11 @@
 </h1>
 <div class="container">
 
-  <h2>
+  <p>
     We would like to thank you for choosing Makanumber.com <br>
 
     Please click on the link below to activate your account and get started.
-  </h2>
+  </p>
 
 
 
