@@ -5,7 +5,9 @@
 
   @section('content')
   <style>
-
+label{
+  font-weight: 600 !important;
+}
   </style>
   <section class="container-fluid">
     <section class="row justify-content-center" style="margin-top: 5%;">
@@ -112,7 +114,7 @@
           </div>
           <button type="submit" style="width: 20% !important; border: 1px rgb(0,180,162); border-radius: 5px; background: rgb(0,180,162);" class="btn btn-primary mb-3">Sign up</button><br>
 
-          <span style="color: black;">Already have an account?</span><a href="/admin/login" style="text-decoration: underline !important; color: #00b4a2 !important;"> Sign in</a>
+          <span style="color: black; font-weight: 600;">Already have an account?</span><a href="/admin/login" style="text-decoration: underline !important; color: #00b4a2 !important;"> Sign in</a>
 
         </form>
 
@@ -189,7 +191,7 @@
           </div>
           <button type="submit" style=" width: 20% !important; border: 1px rgb(0,180,162); border-radius: 5px; ; background: rgb(0,180,162);" class="btn btn-primary mb-3">Sign up</button><br>
 
-          <span style="color: black;">Already have an account?</span><a href="/admin/login" style="text-decoration: underline !important;  color: #00b4a2 !important;"> Sign in</a>
+          <span style="color: black; font-weight: 600;">Already have an account?</span><a href="/admin/login" style="text-decoration: underline !important;  color: #00b4a2 !important;"> Sign in</a>
           <!-- <button type="submit" style=" border: 1px solid #D3D3D3;" class="btn btn-light btn-block" >Create an account</button> -->
 
         </form>
@@ -217,6 +219,15 @@
 
   <script>
     $(document).ready(function() {
+      // By default
+      $('.member-section').show();
+      $('.agency-section').hide();
+      $('.ag_member').css('background-color', 'rgb(0,180,162)');
+      $('.ag_member').css('color', '#ffffff');
+      $('.ag_agency').css('background-color', 'transparent');
+      $('.ag_agency').css('color', '#8695A1');
+
+
       $('#member').click(function() {
         $('.member-section').show();
         $('.agency-section').hide();
@@ -224,8 +235,6 @@
         $('.ag_member').css('color', '#ffffff');
         $('.ag_agency').css('background-color', 'transparent');
         $('.ag_agency').css('color', '#8695A1');
-
-
       });
 
       $('#agency').click(function() {
@@ -235,7 +244,6 @@
         $('.ag_agency').css('color', '#ffffff');
         $('.ag_member').css('background-color', 'transparent');
         $('.ag_member').css('color', '#8695A1');
-
       });
 
     });
